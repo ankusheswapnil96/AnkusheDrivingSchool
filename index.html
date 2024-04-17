@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driving School Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- Owl Carousel JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+  <!-- Custom CSS -->
+  <script>
+    // Initialize Owl Carousel
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+        //   600: {
+        //     items: 1
+        //   },
+        //   1000: {
+        //     items: 3
+        //   }
+        }
+      });
+    });
+  </script>
+  <style>
+    .lead {
+        text-align: center;
+    }
+    .t_name{
+        text-align: center;
+    }
+        /* WhatsApp Contact Button Styles */
+    /* WhatsApp Contact Button Styles */
+.whatsapp-button {
+  position: fixed;
+  top: 5px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 9999;
+  display: none; /* Initially hide the button */
+  animation: flash 2s infinite;
+}
+
+.whatsapp-button.show {
+  display: block; /* Show the button */
+}
+
+@keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+
+  </style>
+<script>
+        // WhatsApp Button Functionality
+    document.addEventListener("DOMContentLoaded", function() {
+    var whatsappButton = document.getElementById('whatsapp-button');
+    if(whatsappButton) {
+        // WhatsApp number to redirect to
+        var whatsappNumber = "7796848539";
+        // Add event listener for button click
+        whatsappButton.addEventListener('click', function() {
+        window.open('https://wa.me/' + whatsappNumber, '_blank');
+        });
+        // Show the button after a delay (e.g., 5 seconds)
+        setTimeout(function(){
+        whatsappButton.classList.add('show');
+        }, 500);
+    }
+    });
+
+  </script>
+  
+</head>
+<body>
+
+<!-- Header Section -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+        <img src="Ankushe logo.png" alt="logo" height="100px"  width="auto"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="jumbotron text-center">
+  <div class="container">
+    <h1 class="display-4">Welcome to our Driving School</h1>
+    <p class="lead">Learn to drive safely with us</p>
+    <a class="btn btn-primary btn-lg" href="#services" role="button">Learn More</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus tempus odio, vel varius leo ultrices a. Sed suscipit tellus eget augue gravida, vitae malesuada felis accumsan.</p>
+      </div>
+      <div class="col-lg-6">
+        <h2>Our Instructors</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus tempus odio, vel varius leo ultrices a. Sed suscipit tellus eget augue gravida, vitae malesuada felis accumsan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center">Our Services</h2>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Beginner's Course</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Defensive Driving</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Advanced Techniques</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-5">
+    <!-- WhatsApp Contact Button -->
+    <div class="container">
+      <h2 class="text-center">Testimonials</h2>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="testimonial">
+            <p class="lead">"Great instructors and friendly staff. I highly recommend this driving school!"</p>
+            <p class="lead"">- John Doe</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="testimonial">
+            <p class="lead">"I passed my driving test on the first try, thanks to the excellent training I received here."</p>
+            <p class="lead">- Jane Smith</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center">Contact Us</h2>
+    <div class="row">
+      <div class="col-lg-6 mx-auto">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="whatsapp-button" class="whatsapp-button">WhatsApp 7796848539</div>
+</section>
+
+<!-- Footer Section -->
+<footer class="py-4 bg-dark text-white">
+  <div class="container text-center">
