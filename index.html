@@ -6,95 +6,6 @@
   <title>Driving School Website</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<!-- jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<!-- Owl Carousel CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-<!-- Owl Carousel JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-
-  <!-- Custom CSS -->
-  <script>
-    // Initialize Owl Carousel
-    $(document).ready(function(){
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 30,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
-        responsive: {
-          0: {
-            items: 1
-          },
-        //   600: {
-        //     items: 1
-        //   },
-        //   1000: {
-        //     items: 3
-        //   }
-        }
-      });
-    });
-  </script>
-  <style>
-    .lead {
-        text-align: center;
-    }
-    .t_name{
-        text-align: center;
-    }
-        /* WhatsApp Contact Button Styles */
-    /* WhatsApp Contact Button Styles */
-.whatsapp-button {
-  position: fixed;
-  top: 5px;
-  right: 20px;
-  background-color: #25d366;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 9999;
-  display: none; /* Initially hide the button */
-  animation: flash 2s infinite;
-}
-
-.whatsapp-button.show {
-  display: block; /* Show the button */
-}
-
-@keyframes flash {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-  }
-
-  </style>
-<script>
-        // WhatsApp Button Functionality
-    document.addEventListener("DOMContentLoaded", function() {
-    var whatsappButton = document.getElementById('whatsapp-button');
-    if(whatsappButton) {
-        // WhatsApp number to redirect to
-        var whatsappNumber = "7796848539";
-        // Add event listener for button click
-        whatsappButton.addEventListener('click', function() {
-        window.open('https://wa.me/' + whatsappNumber, '_blank');
-        });
-        // Show the button after a delay (e.g., 5 seconds)
-        setTimeout(function(){
-        whatsappButton.classList.add('show');
-        }, 500);
-    }
-    });
-
-  </script>
-  
 </head>
 <body>
 
@@ -196,7 +107,7 @@
         <div class="item">
           <div class="testimonial">
             <p class="lead">"Great instructors and friendly staff. I highly recommend this driving school!"</p>
-            <p class="lead"">- John Doe</p>
+            <p class="lead">- John Doe</p>
           </div>
         </div>
         <div class="item">
@@ -239,3 +150,59 @@
 <!-- Footer Section -->
 <footer class="py-4 bg-dark text-white">
   <div class="container text-center">
+    <!-- Footer content goes here -->
+  </div>
+</footer>
+
+<!-- JavaScript libraries -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Owl Carousel JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script>
+    // Initialize Owl Carousel
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+        //   600: {
+        //     items: 1
+        //   },
+        //   1000: {
+        //     items: 3
+        //   }
+        }
+      });
+    });
+
+    // WhatsApp Button Functionality
+    document.addEventListener("DOMContentLoaded", function() {
+      var whatsappButton = document.getElementById('whatsapp-button');
+      if(whatsappButton) {
+          // WhatsApp number to redirect to
+          var whatsappNumber = "7796848539";
+          // Add event listener for button click
+          whatsappButton.addEventListener('click', function() {
+          window.open('https://wa.me/' + whatsappNumber, '_blank');
+          });
+          // Show the button after a delay (e.g., 5 seconds)
+          setTimeout(function(){
+          whatsappButton.classList.add('show');
+          }, 500);
+      }
+    });
+</script>
+
+</body>
+</html>
