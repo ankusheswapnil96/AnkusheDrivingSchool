@@ -6,6 +6,44 @@
   <title>Driving School Website</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <!-- Custom CSS -->
+  <style>
+    .lead {
+        text-align: center;
+    }
+    .t_name{
+        text-align: center;
+    }
+    /* WhatsApp Contact Button Styles */
+    .whatsapp-button {
+      position: fixed;
+      top: 5px;
+      right: 20px;
+      background-color: #25d366;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 9999;
+      display: none; /* Initially hide the button */
+      animation: flash 2s infinite;
+    }
+
+    .whatsapp-button.show {
+      display: block; /* Show the button */
+    }
+
+    @keyframes flash {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
 
@@ -13,7 +51,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand" href="#">
-        <img src="Ankushe logo.png" alt="logo" height="100px"  width="auto"/>
+        <img src="Ankushe_logo.png" alt="logo" height="auto" width="150px"/>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
